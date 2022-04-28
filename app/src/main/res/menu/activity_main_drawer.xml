@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_original">
+        <item
+            android:id="@+id/nav_translate"
+            android:icon="@drawable/ic_translate"
+            android:visible="false"
+            android:title="@string/str_nav_translate" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorites"
+            android:visible="false"
+            android:title="@string/str_nav_favorites"
+            app:actionLayout="@layout/menu_counter"/>
+    </group>
+
+    <item android:title="My Data">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_add"
+                    android:icon="@drawable/ic_add_white"
+                    android:title="@string/str_nav_add" />
+
+                <item
+                    android:id="@+id/nav_my_word"
+                    android:icon="@drawable/ic_baseline_view_list_24"
+                    android:title="@string/str_nav_my_word"
+                    app:actionLayout="@layout/menu_counter"/>
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_original_2">
+        <item
+            android:id="@+id/nav_more_app"
+            android:icon="@drawable/ic_baseline_apps_24"
+            android:title="@string/str_nav_more_apps" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/str_nav_setting" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_original_3">
+
+        <item
+            android:id="@+id/nav_webview"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="@string/txt_webview" />
+
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_original_4">
+
+        <item
+            android:id="@+id/nav_webview_two"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="@string/txt_webview_two" />
+
+    </group>
+
+</menu>
